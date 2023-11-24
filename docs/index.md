@@ -1,1 +1,3 @@
-# Rafael Pereira personal snippets
+# Rafael Pereira's personal snippets
+
+Info
