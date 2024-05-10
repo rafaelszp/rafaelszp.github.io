@@ -7,6 +7,8 @@ import Heading from '@theme/Heading';
 
 import styles from './index.module.css';
 
+window.location.href = '/docs'
+
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
