@@ -5,7 +5,7 @@
 <meta name="generator" content="Docusaurus v3.3.2">
 <title data-rh="true">AWS - Estudo de caso - NAT Gateway | Rafael&#x27; Case studies</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://rafaelszp.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://rafaelszp.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://rafaelszp.github.io/docs/aws/Networking/Case Studies/natgateway"><meta data-rh="true" property="og:locale" content="pt_BR"><meta data-rh="true" name="docusaurus_locale" content="pt-BR"><meta data-rh="true" name="docsearch:language" content="pt-BR"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="AWS - Estudo de caso - NAT Gateway | Rafael&#x27; Case studies"><meta data-rh="true" name="description" content="Introdução"><meta data-rh="true" property="og:description" content="Introdução"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://rafaelszp.github.io/docs/aws/Networking/Case Studies/natgateway"><link data-rh="true" rel="alternate" href="https://rafaelszp.github.io/docs/aws/Networking/Case Studies/natgateway" hreflang="pt-BR"><link data-rh="true" rel="alternate" href="https://rafaelszp.github.io/docs/aws/Networking/Case Studies/natgateway" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="Rafael&#39; Case studies RSS Feed">
 <link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Rafael&#39; Case studies Atom Feed"><link rel="stylesheet" href="/assets/css/styles.698f067c.css">
-<script src="/assets/js/runtime~main.fc1c99fb.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.5135b839.js" defer="defer"></script>
 <script src="/assets/js/main.aa5c9370.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -18,10 +18,10 @@
 <li>Para quê serve o NAT Gateway? Não é a mesma coisa que o Internet Gateway?</li>
 <li>E as rotas? Elas funcionam realmente em todas as AZ&#x27;s ou somente dentro das subnets a elas associadas?</li>
 </ul>
-<p>Então, como um tecnicista com viés mais orientado pragmatismo, resolvi elaborar dois estudos de caso, sendo um referente ao NAT Gateway e um ao Transit Gateway. Todavia, neste artigo tratarei somente do NAT Gateway.</p>
-<mark><strong>Atenção</strong>: Esta solu ção foi elaborada com intuito de aprender como funcionam os serviços de rede da AWS, por isso <strong>NÃO DEVE SER ADOTADA DE FORMA ALGUMA</strong> como prática ou como referência arquitetural.</mark>
+<p>Então, como um tecnicista com viés que tende ao pragmatismo, resolvi elaborar dois estudos de caso, sendo um referente ao NAT Gateway e um ao Transit Gateway. Todavia, neste artigo tratarei somente do NAT Gateway.</p>
+<mark><strong>Atenção</strong>: Esta soluç ão foi elaborada com intuito de aprender como funcionam os serviços de rede da AWS, por isso <strong>NÃO DEVE SER ADOTADA DE FORMA ALGUMA</strong> como prática ou como referência arquitetural.</mark>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="caso-1---nat-gateway">Caso 1 - NAT Gateway<a href="#caso-1---nat-gateway" class="hash-link" aria-label="Link direto para Caso 1 - NAT Gateway" title="Link direto para Caso 1 - NAT Gateway">​</a></h2>
-<p>Neste caso, resolvi me desafiar ao definir a seguinte circunstância a ser tratada:  Desenvolver uma arquitetura que deve atender as seguintes especificações:</p>
+<p>Neste caso, resolvi me desafiar ao definir a seguinte circunstância a ser tratada:  Desenvolver uma arquitetura que deve atender as seguintes especificações a seguir.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="especificações">Especificações<a href="#especificações" class="hash-link" aria-label="Link direto para Especificações" title="Link direto para Especificações">​</a></h3>
 <p>Desenvolver uma arquitetura de redes, baseadas na Cloud Provider AWS, em que haja:</p>
 <ul>
@@ -41,7 +41,7 @@
 </ul>
 <p>Além destas especificações, é importante contemplar também:</p>
 <ol>
-<li>AT Gateway para fazer o tráfego de saída das subnets públicas</li>
+<li>NAT Gateway para fazer o tráfego de saída das subnets públicas</li>
 <li>Todas as subnets devem estar em zonas distintas</li>
 <li>Um teste deve ser realizado para averiguar se subnets públicas da VPC-A conseguem comunicar com os hosts de subnets privadas de VPC-B e vice-versa<!-- -->
 <ul>
