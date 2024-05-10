@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkrafaelszp_github_io=self.webpackChunkrafaelszp_github_io||[]).push([[583],{8198:(a,e,r)=>{r.r(e),r.d(e,{default:()=>t});r(8774),r(4586),r(1107);var s=r(6347);var u=r(4848);function t(){return(0,u.jsx)(s.rd,{to:"/docs"})}}}]);
