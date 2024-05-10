@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
-    "start": "docusaurus start",
+    "start": "WATCHPACK_POLLING=true  docusaurus start --host 0.0.0.0 --no-open --no-minify",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy:ds": "docusaurus deploy",
