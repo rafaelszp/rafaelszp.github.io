@@ -4,10 +4,10 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
+import {Redirect} from '@docusaurus/router';
 
 import styles from './index.module.css';
 
-// window.location.href = '/docs'
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -31,15 +31,16 @@ function HomepageHeader() {
 }
 
 export default function Home(): JSX.Element {
-  const {siteConfig} = useDocusaurusContext();
-  return (
-    <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
-      <HomepageHeader />
-      <main>
-        <HomepageFeatures />
-      </main>
-    </Layout>
-  );
+  // const {siteConfig} = useDocusaurusContext();
+  return <Redirect to="/docs" />;
+  // return (
+  //   <Layout
+  //     title={`Hello from ${siteConfig.title}`}
+  //     description="Description will go into a meta tag in <head />">
+  //     <HomepageHeader />
+  //     <main>
+  //       {/* <HomepageFeatures /> */}
+  //     </main>
+  //   </Layout>
+  // );
 }
