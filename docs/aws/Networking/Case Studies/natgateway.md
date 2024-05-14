@@ -89,6 +89,7 @@ Para validar a arquitetura proposta realizei alguns testes, sendo:
 - Na documentação é mencionado o NGW Privado para fazer conexão entre VPC's, mas como fazer essa conexão? Será via Transit Gateway, se sim como deve ser feito isso??
 	- Como tentativa, criei um NAT Gateway privado e rotas associadas a ele, mas não obtive sucesso. 
 	- Ao tentar associar uma ENI avulsa ao NGW Privado, não era possível pois não este recurso não era listado
+- E se precisar conectar uma VPN (Site to Site). Qual serviço seria utilizado para isso? Um Virtual Private Gateway? Como seria a tabela de roteamento entre a VPC e a rede On Premises?
 
 ## TODO
 Toda a configuração foi utilizada por meio da prática ClickOps, que não é recomendada, assim o próximo desafio é escrever um IaC que represente esta arquitetura proposta. Além disto, é importante validar no Well Architected se as práticas desta solução são adequadas.
