@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkrafaelszp_github_io=self.webpackChunkrafaelszp_github_io||[]).push([[9616],{5205:a=>{a.exports=JSON.parse('{"tags":[{"label":"windows","permalink":"/blog/tags/windows","count":1},{"label":"virtualbox","permalink":"/blog/tags/virtualbox","count":1}]}')}}]);

@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkrafaelszp_github_io=self.webpackChunkrafaelszp_github_io||[]).push([[472],{5513:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"index","permalink":"/blog/index","unlisted":false}]}')}}]);
