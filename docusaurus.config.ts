@@ -47,6 +47,11 @@ const config: Config = {
         //   editUrl:
         //     'https://github.com/rafaelszp/rafaelszp.github.io/tree/main/packages/create-docusaurus/templates/shared/',
         // },
+        blog: {
+          blogSidebarTitle: 'All posts',
+          blogSidebarCount: 'ALL',
+          editUrl: 'https://github.com/rafaelszp/rafaelszp.github.io/tree/master/blog',
+        },
         theme: {
           customCss: './src/css/custom.css',
         },
