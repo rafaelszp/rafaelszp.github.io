@@ -96,16 +96,16 @@ const config: Config = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/invalid_url',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/invalid_url',
+              label: 'My Legacy Wordpress Blog',
+              href: 'https://rafaelszp.wordpress.com',
             },
             {
               label: 'Twitter',
               href: 'https://twitter.com/szp_rafael',
+            },
+            {
+              label: 'Linked In',
+              href: 'https://br.linkedin.com/in/rafaelszp',
             },
           ],
         },
@@ -123,7 +123,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Rafael Pereira, Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
