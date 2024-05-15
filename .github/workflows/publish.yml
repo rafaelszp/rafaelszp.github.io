@@ -24,6 +24,5 @@ jobs:
 
     - name: Build
       run: |
-        npm install -g yarn
         yarn install
         yarn run publish

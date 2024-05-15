@@ -15,5 +15,6 @@ http://{SERVER_URL}/auth/realms/{realm}/protocol/openid-connect/userinfo
  
 
 Dont forget to send this request with you authorization header. Ex:
-
+~~~~ 
 Authorization: Bearer {token}
+~~~
