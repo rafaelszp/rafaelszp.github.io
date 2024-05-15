@@ -70,7 +70,7 @@ const config: Config = {
           position: 'left',
           label: 'Estudos',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        {to: '/blog', label: 'Snippets', position: 'left'},
         {
           href: 'https://github.com/rafaelszp',
           label: 'Meu GitHub',
@@ -111,7 +111,7 @@ const config: Config = {
           title: 'More',
           items: [
             {
-              label: 'Blog',
+              label: 'Snippets',
               to: '/blog',
             },
             {
@@ -126,6 +126,29 @@ const config: Config = {
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
+    },
+    algolia: {
+      // The application ID provided by Algolia
+      appId: 'BVVE68SDSY',
+
+      // Public API key: it is safe to commit it
+      apiKey: '78665a9bbc3f60d5bee9e1c162209681',
+
+      indexName: 'rafaelszpio',
+
+      // Optional: see doc section below
+      contextualSearch: true,
+
+
+      // Optional: Algolia search parameters
+      searchParameters: {},
+
+      // Optional: path for search page that enabled by default (`false` to disable it)
+      searchPagePath: 'search',
+
+      // Optional: whether the insights feature is enabled or not on Docsearch (`false` by default)
+      insights: false,
+
     },
   } satisfies Preset.ThemeConfig,
 };
