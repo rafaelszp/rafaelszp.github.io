@@ -25,4 +25,8 @@ jobs:
     - name: Build
       run: |
         yarn install
-        yarn run publish
+        yarn build
+
+    - name: Deploy
+      run: |
+        yarn deploy
