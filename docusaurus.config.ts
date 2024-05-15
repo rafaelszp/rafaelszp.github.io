@@ -56,12 +56,14 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    // image: 'img/docusaurus-social-card.jpg',
+    image: 'img/rafaelszp.jpg',
     navbar: {
       title: 'Rafael SZP',
       logo: {
         alt: 'Rafael\'s Logo',
-        src: 'img/logo.svg',
+        // src: 'img/logo.svg',
+        src: 'img/rafaelszp.jpg',
       },
       items: [
         {
