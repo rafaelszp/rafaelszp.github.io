@@ -28,5 +28,11 @@ jobs:
         yarn build
 
     - name: Deploy
+      env:
+        MY_EMAIL: rafaelszp@users.noreply.github.com
+        MY_NAME: rafaelszp
       run: |
+        git config --global user.email $MY_EMAIL
+        git config --global user.name $MY_NAME
+        git remote set-url origin https://$MY_NAME:${{ secrets.GH_SECRET }}@github.com:rafaelszp/rafaelszp.github.io.git
         yarn deploy
