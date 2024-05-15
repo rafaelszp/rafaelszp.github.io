@@ -137,11 +137,8 @@ const config: Config = {
       indexName: 'rafaelszpio',
 
       // Optional: see doc section below
-      contextualSearch: true,
+      contextualSearch: false,
 
-
-      // Optional: Algolia search parameters
-      searchParameters: {},
 
       // Optional: path for search page that enabled by default (`false` to disable it)
       searchPagePath: 'search',
