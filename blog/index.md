@@ -2,7 +2,9 @@
 title: Snippets Intro
 sidebar_label: Snippets Intro
 ---
-Utilizo esta seção para publicar meus snippets que utilizo como templates/blueprints para soluções pontuais que possam vir a recorrer em um futuro incerto ☺️. Todo o conteúdo era postado, até o dia 10/05/2024, no [meu Wordpress](https://rafaelszp.wordpress.com), agora estou movendo para cá. Por causa dessa movimentação de conteúdo, pode haver problemas de formatação, que serão corrigidas pontualmente :)
 
+In this section, I'll be sharing code snippets that I use as templates for solving future problems.  
+Previously, this content was on [my Wordpress](https://rafaelszp.wordpress.com) until May 10th, 2024. 
+I'm moving it here, but there might be some formatting issues due to the transfer. These will be addressed promptly!
 
-**Obs.:** Para fazer essa movimentação, utilizei essa ferramenta: https://github.com/lonekorean/wordpress-export-to-markdown
+**Note:** To make this movement, I used this tool: https://github.com/lonekorean/wordpress-export-to-markdown
