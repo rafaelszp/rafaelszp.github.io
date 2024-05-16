@@ -4,7 +4,7 @@
         <title>Rafael' Case studies Blog</title>
         <link>https://rafaelszp.github.io/blog</link>
         <description>Rafael' Case studies Blog</description>
-        <lastBuildDate>Wed, 15 May 2024 20:21:45 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 16 May 2024 11:32:23 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>pt-BR</language>
@@ -12,10 +12,12 @@
             <title><![CDATA[Snippets Intro]]></title>
             <link>https://rafaelszp.github.io/blog/index</link>
             <guid>https://rafaelszp.github.io/blog/index</guid>
-            <pubDate>Wed, 15 May 2024 20:21:45 GMT</pubDate>
-            <description><![CDATA[Utilizo esta seção para publicar meus snippets que utilizo como templates/blueprints para soluções pontuais que possam vir a recorrer em um futuro incerto ☺️. Todo o conteúdo era postado, até o dia 10/05/2024, no meu Wordpress, agora estou movendo para cá. Por causa dessa movimentação de conteúdo, pode haver problemas de formatação, que serão corrigidas pontualmente :)]]></description>
-            <content:encoded><![CDATA[<p>Utilizo esta seção para publicar meus snippets que utilizo como templates/blueprints para soluções pontuais que possam vir a recorrer em um futuro incerto ☺️. Todo o conteúdo era postado, até o dia 10/05/2024, no <a href="https://rafaelszp.wordpress.com/" target="_blank" rel="noopener noreferrer">meu Wordpress</a>, agora estou movendo para cá. Por causa dessa movimentação de conteúdo, pode haver problemas de formatação, que serão corrigidas pontualmente :)</p>
-<p><strong>Obs.:</strong> Para fazer essa movimentação, utilizei essa ferramenta: <a href="https://github.com/lonekorean/wordpress-export-to-markdown" target="_blank" rel="noopener noreferrer">https://github.com/lonekorean/wordpress-export-to-markdown</a></p>]]></content:encoded>
+            <pubDate>Thu, 16 May 2024 11:32:23 GMT</pubDate>
+            <description><![CDATA[In this section, I'll be sharing code snippets that I use as templates for solving future problems.]]></description>
+            <content:encoded><![CDATA[<p>In this section, I'll be sharing code snippets that I use as templates for solving future problems.<br>
+<!-- -->Previously, this content was on <a href="https://rafaelszp.wordpress.com/" target="_blank" rel="noopener noreferrer">my Wordpress</a> until May 10th, 2024.
+I'm moving it here, but there might be some formatting issues due to the transfer. These will be addressed promptly!</p>
+<p><strong>Note:</strong> To make this movement, I used this tool: <a href="https://github.com/lonekorean/wordpress-export-to-markdown" target="_blank" rel="noopener noreferrer">https://github.com/lonekorean/wordpress-export-to-markdown</a></p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[Generating temporary credentials with cloud shell]]></title>
