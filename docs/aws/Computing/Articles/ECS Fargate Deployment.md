@@ -5,6 +5,7 @@ sidebar_label: ECS Fargate Container Deployment
 # ECS Fargate Container Deployment
 
 Created: 2024-05-21 06:56
+
 Tags: \#aws \#ecs \#devops
 
 ## O que é ECS
@@ -15,12 +16,12 @@ As principais características deste serviço são:
 - Totalmente integrado ao [IAM](03 - Contas, acessos e IAM "wikilink")
 - Integrado ao Cloudwatch para integração com uso de métricas, logs e monitoramento
 - O modelo de deployment que utiliza o [AWS Fargate](AWS Fargate "wikilink") é o que é realmente considerado Cloud Native
-\### Termos chave
+### Termos chave
 - Tasks
 - Task Definitions
 - Services
 - Clusters
-\## ECS: Conceitos
+## ECS: Conceitos
 
 ### ECS: Task Definition
 
@@ -38,16 +39,19 @@ Em relação às propriedades da Task Definition:
 - Fargate: awslogs, splunk e awsfirelens
 - ECS: fluentd, json-file
 - **Exposed ports**: Quais as portas que o contêiner utiliza para tráfego de entrada
-\## ECS: Task
+
+## ECS: Task
 
 Uma task é a execução baseada nas definições, é composta de um conjunto de contêineres executados no mesmo host. A definição é no formato Docker Compose.
 Ex.:
 ![Pasted image 20240521093327.png](ECS%20Fargate%20Deployment-media/7d00f780b3fdd7f31b3d44386bd67c230535c1bf.png "wikilink")
 
 Além disto, é possível executar a Task de diretamente(manualmente), que permanecerá ativa até que seja manualmente finalizada ou que finalize por si mesma. Neste tipo de execução, não haverá reposição (replacement).
-\### ECS: Service
+
+### ECS: Service
 Um gerenciador de ciclo de vida de Tasks, lembra um pouco o Deployment do K8s. Possui health check e reposição de instâncias "não saudáveis"
-\### ECS: Clusters
+
+### ECS: Clusters
 É um agrupamento de Services e Tasks, lembra o namespace do K8s.
 
 ### ECS: Launch Types (LT)
@@ -61,15 +65,18 @@ Onde o usuário deve controlar a infraestrutura da Task, como volumes, CPU, Aloc
 #### ECS - LT: Fargate
 
 Recomendável para Tasks que possuem baixo processamento e que tenha um range menor de elasticidade. Também é recomendável quando não é sabida a quantidade de recursos necessários para o workload. Low Overhead(custo adicional de recursos - hw, sw, rede, security) e bursts ocasionais.
-![ECS FARGATE.excalidraw.svg](ECS FARGATE.excalidraw.svg "wikilink")
-\#### LT: External
+![ECS FARGATE.excalidraw.svg](ECS%20Fargate%20Deployment-media/ecs_fargate.svg)
+
+#### LT: External
 Este caso é para rodar os workload OnPremises, mas com a orquestração do ECS.
-\### ECS: Task Scheduling
+
+### ECS: Task Scheduling
 É o processo de associar as tasks a contêineres dentro de um cluster, determinando quais instâncias de contêiner são apropriadas para executá-las.
 
 #### Estados na Lifecycle
 
-![ECS - Task States lifecycle.excalidraw.svg](ECS - Task States lifecycle.excalidraw.svg "wikilink")
+![ECS - Task States lifecycle.excalidraw.svg](ECS%20Fargate%20Deployment-media/task_states.svg)
+
 Descrevendo o ciclo de vida, então:
 - **Provisioning**: Progresso de pré-condições, alocações de recurso da AWS. Ex.: anexando ENI
 - **Pending:** Aguardando disponibilidade de recursos
@@ -79,7 +86,8 @@ Descrevendo o ciclo de vida, então:
 - **Stopping**: Finalizando com **SIGTERM**, se 'estourar' o timeout(graceful time) o contêiner receberá um **SIGKILL**
 - **Deprovisioning**: Passos finais para transição para o estado de **Stopped**, ex: desalocando ENI
 - **Stopped**: Task foi finalizada com sucesso
-\#### EventBrigde e agendamento regular
+
+#### EventBrigde e agendamento regular
 O agendamento das tarefas baseado em horários regulares é executada pelo serviço [Event Bridge](O que é event bridge "wikilink"). É importante que este serviço possua permissões para executar as tasks nos tempos pré-determinados.
 
 #### Execução on demand
@@ -96,8 +104,10 @@ O tipo Fargate depende das imagens de contêiner, por um registro de imagens, po
 
 ## ECS: Detalhes ao executar uma aplicação no ECS Fargate
 
-![ECS - Esquema básico de uma aplicação NodeJS com Fargate .excalidraw.svg](ECS - Esquema básico de uma aplicação NodeJS com Fargate .excalidraw.svg "wikilink")
-\## References
+![ECS - Esquema básico de uma aplicação NodeJS com Fargate .excalidraw.svg](ECS%20Fargate%20Deployment-media/nodejs.svg)
+
+
+## References
 
 1.  AWS Fundamentals - Running and Orchestrating Containers with ECS Fargate página 85 (ebook)
 2.  Deploy applications on Amazon ECS using Docker Compose https://aws.amazon.com/blogs/containers/deploy-applications-on-amazon-ecs-using-docker-compose/
