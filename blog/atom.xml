@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://rafaelszp.github.io/blog</id>
     <title>Rafael' Case studies Blog</title>
-    <updated>2024-05-21T20:00:41.000Z</updated>
+    <updated>2024-06-12T13:56:25.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://rafaelszp.github.io/blog"/>
     <subtitle>Rafael' Case studies Blog</subtitle>
@@ -11,12 +11,23 @@
         <title type="html"><![CDATA[Snippets Intro]]></title>
         <id>https://rafaelszp.github.io/blog/index</id>
         <link href="https://rafaelszp.github.io/blog/index"/>
-        <updated>2024-05-21T20:00:41.000Z</updated>
+        <updated>2024-06-12T13:56:25.000Z</updated>
         <summary type="html"><![CDATA[In this section, I'll be sharing code snippets that I use as templates for solving future problems.]]></summary>
         <content type="html"><![CDATA[<p>In this section, I'll be sharing code snippets that I use as templates for solving future problems.<br>
 <!-- -->Previously, this content was on <a href="https://rafaelszp.wordpress.com/" target="_blank" rel="noopener noreferrer">my Wordpress</a> until May 10th, 2024.
 I'm moving it here, but there might be some formatting issues due to the transfer. These will be addressed promptly!</p>
 <p><strong>Note:</strong> To make this movement, I used this tool: <a href="https://github.com/lonekorean/wordpress-export-to-markdown" target="_blank" rel="noopener noreferrer">https://github.com/lonekorean/wordpress-export-to-markdown</a></p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Fixing pacman corrupted signature (PGP) when executing an update]]></title>
+        <id>https://rafaelszp.github.io/blog/2024/06/12/2024/06/fixing-archlinux-keysignature-error-when-executing-pacman-syu</id>
+        <link href="https://rafaelszp.github.io/blog/2024/06/12/2024/06/fixing-archlinux-keysignature-error-when-executing-pacman-syu"/>
+        <updated>2024-06-12T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[When an error like following occurs...]]></summary>
+        <content type="html"><![CDATA[<p>When an error like following occurs...</p>
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">File /var/cache/pacman/pkg/rhash-1.4.4-1-x86_64.pkg.tar.zst is corrupted (invalid or corrupted package (PGP signature)).</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copiar código para a área de transferência" title="Copiar" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<p>Just execute the following command</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">sudo pacman -S archlinux-keyring</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copiar código para a área de transferência" title="Copiar" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[Generating temporary credentials with cloud shell]]></title>
@@ -224,17 +235,5 @@ I'm moving it here, but there might be some formatting issues due to the transfe
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="listing-verbs">Listing verbs<a href="https://rafaelszp.github.io/blog/2022/09/30/2022/09/listing-k8s-api-resources-and-verbs-with-kubectl#listing-verbs" class="hash-link" aria-label="Link direto para Listing verbs" title="Link direto para Listing verbs">​</a></h4>
 <div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">$ kubectl api-resources --no-headers --sort-by name -o wide | sed 's/.*\[//g' | tr -d "]" | tr " " "\n" | sort | uniq</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copiar código para a área de transferência" title="Copiar" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 <p>Reference: <a href="https://stackoverflow.com/questions/57661494/list-of-kubernetes-rbac-rule-verbs" target="_blank" rel="noopener noreferrer">https://stackoverflow.com/questions/57661494/list-of-kubernetes-rbac-rule-verbs</a></p>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to fix the Spacevim error : Updating failed, The plugin dir is dirty]]></title>
-        <id>https://rafaelszp.github.io/blog/2022/07/06/2022/07/how-to-fix-the-spacevim-error-updating-failed-the-plugin-dir-is-dirty</id>
-        <link href="https://rafaelszp.github.io/blog/2022/07/06/2022/07/how-to-fix-the-spacevim-error-updating-failed-the-plugin-dir-is-dirty"/>
-        <updated>2022-07-06T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[First, make sure that you didn’t change any file on ~/.SpaceVim/.]]></summary>
-        <content type="html"><![CDATA[<p>First, make sure that you didn’t change any file on ~/.SpaceVim/.</p>
-<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">cd ~/.SpaceVim.d/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">git checkout .</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copiar código para a área de transferência" title="Copiar" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
-<p>then, empty the repos contained in vimfiles cache:</p>
-<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">rm -rf ~/.cache/vimfiles/repos/github.com/*</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copiar código para a área de transferência" title="Copiar" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
-<p>The error should then disappear</p>]]></content>
     </entry>
 </feed>
