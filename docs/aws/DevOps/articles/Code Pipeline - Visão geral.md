@@ -5,7 +5,7 @@ sidebar_label: Code Pipeline - Visão geral
 # Code Pipeline - Visão geral
 
 Created: 2024-07-03 08:17
-Tags: \#devops \#codepipeline \#aws
+Tags: #devops #codepipeline #aws
 
 ## Serve para quê?
 
@@ -80,7 +80,7 @@ As executions podem ser paradas manualmente, a qualquer momento durante a execu�
 
 #### Failed Executions
 
-Quando uma execution não completa devido a algum problema o estado é alterado para `Failed`, de modo que o processo de rollback é possível.
+Quando uma execution não completa devido a algum problema, o estado é alterado para `Failed`, de modo que o processo de rollback é possível.
 
 #### Execution modes
 
@@ -127,7 +127,8 @@ As variáveis podem pertencer a escopos específicos, garantindo que elas serão
 1. `codepipeline` , ex.:`#{codepipeline.PipelineExecutionId}`. Neste caso são variáveis implícitas (reservadas) da pipeline em si, disponíveis no início de cada execution.
 2. `variables`, ex.: `#{variables.variable_name}`. Neste caso são variáveis que ficam no escopo da pipeline
 3. Ex.: `#{SourceVariables.VersionId}`. Neste caso são variáveis definidas e produzidas na execução das actions, um namespace precisa ser definido neste escopo e não pode conflitar com outras variáveis da pipeline, aqui foi definido um namespace para a action referente ao CodeCommit que utiliza o namespace `SourceVariables`. Outro exemplo seria o CodeBuild que utiliza o namespace `BuildVariables` para produzir output variables
-\## Serviços que podem ser integrados
+
+## Serviços que podem ser integrados
 
 Durante a execução da pipeline é possível integrar-se a certos serviços da AWS, sendo possível também integrá-la a serviços terceiros, como por exemplo:
 1. Fontes de origem: Github, Gitlab, AWS Code Commit, Amazon S3, Outros serviços GIt via Webhooks V2
@@ -242,7 +243,7 @@ Do ponto de vista do Code Pipeline, são um conjunto de rules (regras) referente
 
 Recaptulando, os eventos são disparados na mudança de estados de um dos seguintes tipos (Types):
 - Pipeline Executions [^2]
-- Stage Executions[^3]https://docs.aws.amazon.com/codepipeline/latest/userguide/detect-state-changes-cloudwatch-events.html#detect-state-events-stage
+- Stage Executions[^3]
 - Action Executions [^4]
 
 Sendo que cada um destes tipos possui seu conjunto de estados que podem ser monitorados.
@@ -302,7 +303,7 @@ Se a estratégia do placeholder bucket for utilizada, não será possível acess
 
 [^2]: https://docs.aws.amazon.com/codepipeline/latest/userguide/detect-state-changes-cloudwatch-events.html#detect-state-events-pipeline
 
-[^3]: 
+[^3]: https://docs.aws.amazon.com/codepipeline/latest/userguide/detect-state-changes-cloudwatch-events.html#detect-state-events-stage 
 
 [^4]: https://docs.aws.amazon.com/codepipeline/latest/userguide/detect-state-changes-cloudwatch-events.html#detect-state-events-action
 
