@@ -4,7 +4,7 @@
         <title>Rafael' Case studies Blog</title>
         <link>https://rafaelszp.github.io/blog</link>
         <description>Rafael' Case studies Blog</description>
-        <lastBuildDate>Fri, 05 Jul 2024 17:44:54 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 05 Jul 2024 17:50:44 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>pt-BR</language>
@@ -12,7 +12,7 @@
             <title><![CDATA[Snippets Intro]]></title>
             <link>https://rafaelszp.github.io/blog/index</link>
             <guid>https://rafaelszp.github.io/blog/index</guid>
-            <pubDate>Fri, 05 Jul 2024 17:44:54 GMT</pubDate>
+            <pubDate>Fri, 05 Jul 2024 17:50:44 GMT</pubDate>
             <description><![CDATA[In this section, I'll be sharing code snippets that I use as templates for solving future problems.]]></description>
             <content:encoded><![CDATA[<p>In this section, I'll be sharing code snippets that I use as templates for solving future problems.<br>
 <!-- -->Previously, this content was on <a href="https://rafaelszp.wordpress.com/" target="_blank" rel="noopener noreferrer">my Wordpress</a> until May 10th, 2024.
