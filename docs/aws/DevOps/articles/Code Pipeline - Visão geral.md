@@ -114,7 +114,6 @@ Os gatilhos de execução podem ser:
 1. Manual, via console ou CLI, por exemplo
 2. CloudWatch events, sendo que o ARN da pipeline será o target de uma event rule
 3. Webhooks do GIT, na versão 2 (V2), para que serviços terceiros como Github ou Gitlab possam diparar pipelines
-4.
 
 ## Variables
 
