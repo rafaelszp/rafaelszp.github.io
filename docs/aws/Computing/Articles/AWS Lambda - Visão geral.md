@@ -20,12 +20,8 @@ O serviço é executado em microcontêineres, assim a cada requisição ou event
 
 Quando um microcontêiner é iniciado pela primeira vez e inicializado ele passa por um processo chamado **Cold Start** que é basicamente condensado nos seguintes passos:
 
-<figure>
-<img src="AWS_LAMBDA_VISAO_GERAL_MEDIA/AWS Lambda Coldstart.excalidraw.svg" title="wikilink"
-/>
-<figcaption
-aria-hidden="true">AWSLambdaColdstart.excalidraw.svg</figcaption>
-</figure>
+
+![100%](AWS_LAMBDA_VISAO_GERAL_MEDIA/AWS%20Lambda%20Coldstart.excalidraw.svg)
 
 Um importante aspecto a considerar que o Cold Start precisa de um tempo para ser concluído, isto significa que as primeiras requisições levarão mais tempo para concluir. Para termos uma idéia, devido ao processo de inicialização, as 5% requisições mais lentas do Lambda são mais lentas que o serviço AWS Fargate.
 
