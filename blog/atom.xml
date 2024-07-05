@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://rafaelszp.github.io/blog</id>
     <title>Rafael' Case studies Blog</title>
-    <updated>2024-07-05T16:46:06.000Z</updated>
+    <updated>2024-07-05T16:51:03.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://rafaelszp.github.io/blog"/>
     <subtitle>Rafael' Case studies Blog</subtitle>
@@ -11,7 +11,7 @@
         <title type="html"><![CDATA[Snippets Intro]]></title>
         <id>https://rafaelszp.github.io/blog/index</id>
         <link href="https://rafaelszp.github.io/blog/index"/>
-        <updated>2024-07-05T16:46:06.000Z</updated>
+        <updated>2024-07-05T16:51:03.000Z</updated>
         <summary type="html"><![CDATA[In this section, I'll be sharing code snippets that I use as templates for solving future problems.]]></summary>
         <content type="html"><![CDATA[<p>In this section, I'll be sharing code snippets that I use as templates for solving future problems.<br>
 <!-- -->Previously, this content was on <a href="https://rafaelszp.wordpress.com/" target="_blank" rel="noopener noreferrer">my Wordpress</a> until May 10th, 2024.
