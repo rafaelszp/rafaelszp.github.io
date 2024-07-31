@@ -33,3 +33,7 @@ mvn deploy:deploy-file -DgroupId=commons-cli          \
 -DrepositoryId=codeartifact    \
 -Durl=https://my_domain-111122223333.d.codeartifact.region.amazonaws.com/maven/repo-name/
 ```
+
+
+## References
+1. https://docs.aws.amazon.com/codeartifact/latest/ug/maven-mvn.html#publishing-third-party-artifacts
