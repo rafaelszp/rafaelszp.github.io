@@ -5,7 +5,7 @@ categories:
   - "windows"
   - "linux"
   - "maven"
-  - "java
+  - "java"
 ---
 
 ## Example 1- Publishing to AWS
